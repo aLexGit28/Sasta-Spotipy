@@ -1,0 +1,28 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Flask env + config
+instance/
+.env
+*.db
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Logs or cache
+*.log
+*.sqlite3
+*.bak
+
+# Pytest cache
+.pytest_cache/
