@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Sasta Spotipy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Sasta Spotipy Logo" class="header-logo"> 
+        <nav>
+            <a href="{{ url_for('main.home_page') }}">Home</a> 
+            <a href="{{ url_for('main.about_page') }}">About</a>
+            </nav>
+    </header>
+
+    <h1>Register for Sasta Spotipy</h1>
+
+    <form method="post" action=""> 
+        <div>
+            <label for="username">Username or Email:</label><br>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+     </body>
+</html>

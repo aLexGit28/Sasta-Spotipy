@@ -1,20 +1,30 @@
 # Inside app/routes.py
 
+# Keep the existing imports and blueprint definition
 from flask import Blueprint, render_template
-
-# Create a Blueprint object named 'main'
-# __name__ helps Flask locate the blueprint
 main_bp = Blueprint('main', __name__) 
 
-# Define the route for the homepage ('/') using the blueprint
+# Keep the existing home and about routes...
 @main_bp.route('/')
 def home_page():
-    # We still render templates the same way
     return render_template('home.html')
 
-# Define the route for the about page ('/about') using the blueprint
 @main_bp.route('/about')
 def about_page():
     return render_template('about.html')
 
-# Add more routes related to main pages here later!
+
+# --- NEW ROUTE FOR LOGIN PAGE ---
+@main_bp.route('/login')
+def login():
+    # This just displays the login form template
+    return render_template('login.html')
+# --- END OF LOGIN ROUTE ---
+
+
+# --- NEW ROUTE FOR REGISTER PAGE ---
+@main_bp.route('/register')
+def register():
+    # This just displays the register form template
+    return render_template('register.html')
+# --- END OF REGISTER ROUTE ---
