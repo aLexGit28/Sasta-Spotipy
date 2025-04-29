@@ -1,20 +1,11 @@
-# Inside run.py
+# Inside run.py (at the top level)
 
-from flask import Flask, render_template
+from app import create_app
 
-app = Flask(__name__)
+# Call the factory function to create the app instance
+app = create_app()
 
-# Route for the homepage
-@app.route('/')
-def home_page():
-    return render_template('home.html')
-
-# --- NEW ROUTE FOR ABOUT PAGE ---
-@app.route('/about')
-def about_page():
-    return render_template('about.html')
-# --- END OF NEW ROUTE ---
-
-# The part that runs the app
+# Run the Flask development server 
+# (only if this script is executed directly)
 if __name__ == '__main__':
     app.run(debug=True)
