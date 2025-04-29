@@ -9,9 +9,17 @@
     
 </head>
 <body>
-    <img src="{{ url_for('static', filename='logo.png') }}" alt="Sasta Spotipy Logo">
-    
+
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Sasta Spotipy Logo" class="header-logo"> 
+        
+        <nav>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('about_page') }}">About</a>
+        </nav>
+    </header>
     <h1>Sasta Spotipy: Your Music Hub</h1>
     <p>Millions of tracks. Ad-free listening (mostly 😉). Start exploring now!</p>
-    </body>
+    
+</body>
 </html>

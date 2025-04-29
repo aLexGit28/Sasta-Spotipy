@@ -1,0 +1,34 @@
+/* Inside static/styles.css - Add these rules */
+
+/* Header Layout using Flexbox */
+header {
+  display: flex; /* Arrange items in a row */
+  justify-content: space-between; /* Push items to opposite ends */
+  align-items: center; /* Vertically align items in the middle */
+  padding: 15px 20px; /* Add some space around the header (top/bottom, left/right) */
+  border-bottom: 1px solid #282c34; /* Optional: faint line below header */
+}
+
+.header-logo {
+  height: 40px; /* Control the logo size */
+  width: auto; /* Maintain aspect ratio */
+}
+
+body {
+  background-color: #191414; /* Spotify's dark background */
+  color: #FFFFFF; /* White text */
+  font-family: sans-serif; 
+}
+
+/* Navigation Link Styling - UPDATED */
+nav a {
+  color: #1DB954; /* Spotify's iconic green */
+  text-decoration: none; /* Remove underline */
+  margin-left: 20px; /* Space between links (if you add more) */
+  font-weight: bold;
+}
+
+/* Optional: We might want to change the hover color too, maybe back to white? */
+nav a:hover {
+  color: #FFFFFF; /* White on hover */
+}

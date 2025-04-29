@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Sasta Spotipy Logo" class="header-logo"> 
+        
+        <nav>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('about_page') }}">About</a>
+        </nav>
+    </header>
     <h1>About Sasta Spotipy</h1>
     <p>This is the amazing (mock) music service you've been waiting for!</p>
     <p>Built with Flask and ❤️.</p>
     
-    </body>
+</body>
 </html>
